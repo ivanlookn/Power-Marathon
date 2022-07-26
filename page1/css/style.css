@@ -1,0 +1,224 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* reset css */
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+body{
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
+}
+
+.container{
+  max-width: 720px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.title{
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.text{
+  color: #7A7A7A;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+
+/* Header */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.header__logo{
+  width: 100px;
+  height: 100px;
+}
+
+.header__text{
+  text-align: right;
+  font-size: 24px;
+  font-family: bold;
+  color: #FF9A89;
+  letter-spacing: 1px;
+}
+
+.content{
+  text-align: center;
+}
+
+.content img:hover{
+  border: 3px solid #FF9A89;
+  border-radius: 50%;
+}
+
+.content img{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 235px;
+  height: 235px;
+}
+
+.info .info__text{
+  text-align: center;
+  color: #504F4F;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.info .info__links{
+  margin-bottom: 10px;
+}
+
+.info .info__link{
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #504F4F;
+}
+
+.info span{
+  padding: 0 7px;
+}
+
+.info__desc{
+  margin-bottom: 20px;
+  align-items: center;
+  display: inline-block;
+}
+
+.info__desc-text{
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-image: url("../img/heart_icon.png");
+  background-position: right center;
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  align-items: center;
+  padding-right: 16px;
+}
+
+/* --------------------------------------- */
+
+/* Page 2 */
+
+.girls{
+  margin-bottom: 20px;
+}
+
+.girl__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.girl__item{
+  padding: 0 5px;
+}
+
+.girl__link img{
+  max-width: 100%;
+}
+
+.girl__link img:hover{
+  background-color: #FF9A89;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
