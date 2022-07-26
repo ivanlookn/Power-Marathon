@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* reset css */
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+body{
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
+}
+
+.container{
+  max-width: 700px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+
+
+
+
