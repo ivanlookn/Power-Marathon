@@ -3,7 +3,7 @@ const text = document.querySelector(".circl__text");
 let counter = 55;
 
 function goUrl() {
-    document.location.href = "../page18/index.html";
+    // document.location.href = "../page18/index.html";
 };
 
 setInterval(()=>{

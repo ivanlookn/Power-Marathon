@@ -11,7 +11,7 @@ html,body{
   height: 100%;
   text-align: center;
   place-items: center;
-  background: #dde6f0;
+  background: #fff;
 }
 
 .circular{
@@ -36,17 +36,14 @@ html,body{
   height: 80px;
   width: 80px;
   margin: -40px 0 0 -40px;
-  background-color: #dde6f0;
+  background-color: #fff;
   border-radius: 100%;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 1px 0 rgba(0,0,0,0.2); */
 }
 
 .circl__text {
-    position: absolute;
-    top: 80%;
-    left: 33%;
-    color: #7A7A7A;
-    font-size: 25px;
+    color: #000;
+    font-size: 35px;
     font-weight: 700;
     line-height: 1.3em;
 }
