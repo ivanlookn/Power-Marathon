@@ -14,21 +14,26 @@
     <title></title>
   </head>
   <body>
-    <!-- <a class="button open-button">
-        <img src="" alt="">картинка
-    </a>
-    <div class="modal" id="modal">
-      <ul>
-        <li>Часто Задаваемые Вопросы</li>
-        <li>Реквизиты</li>
-        <li><a>Публичная оферта</a></li>
-        <li><a>Политика конфиденциальности</a></li>
-        <li><a>Политика подписки</a></li>
-        <li><a>Политика возврата денежных средств</a></li>
-        <li><a>Отменить подписку</a></li>
-      </ul>
-      <a class="button close-button">close modal</a>
-    </div> -->
+
+
+    <button class="js-open-modal" data-modal="1">
+        <img class="menu" src="./img/menu.png" alt="menu">
+    </button>
+
+    <div class="modal" data-modal="1">
+        <button class="modal__cross js-modal-close"><img src="./img/close.png" alt="close"></button>
+        <ul  class="modal__title">
+            <li>Часто Задаваемые Вопросы</li>
+            <li>Реквизиты</li>
+            <li><a>Публичная оферта</a></li>
+            <li><a>Политика конфиденциальности</a></li>
+            <li><a>Политика подписки</a></li>
+            <li><a>Политика возврата денежных средств</a></li>
+            <li><a>Отменить подписку</a></li>
+        </ul>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
+
 
     <div class="container">
       <header class="header">

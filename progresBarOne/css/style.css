@@ -87,7 +87,7 @@ html,body{
 
 .circle .left .progress{
   z-index: 1;
-  animation: left 4s linear both;
+  animation: left 4s ease both;
 }
 
 @keyframes left {
@@ -102,7 +102,7 @@ html,body{
 }
 
 .circle .right .progress{
-  animation: right .5s linear both;
+  animation: right .5s ease both;
   animation-delay: 4s;
 }
 

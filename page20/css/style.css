@@ -789,9 +789,13 @@ input {
 
 /* Page 20 */
 
+
 .page20{
   background-color: #FDE5E1;
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .page20__header{
@@ -1041,5 +1045,6 @@ input {
   position: absolute;
   right: 65px;
   bottom: -104px;
+  z-index: 1;
 }
 

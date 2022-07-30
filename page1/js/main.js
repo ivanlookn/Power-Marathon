@@ -1,19 +1,52 @@
-// const modal = document.querySelector("#modal");
-// const openModal = document.querySelector(".open-button");
-// const closeModal = document.querySelector(".close-button");
-
 document.getElementById("btn_start").addEventListener('click', goUrl, false);
 
 function goUrl() {
     document.location.href = "../page2/index.html";
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+
+/* Записываем в переменные массив элементов-кнопок и подложку.
+   Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+let modalButtons = document.querySelectorAll('.js-open-modal');
+let overlay = document.querySelector('.js-overlay-modal');
+let closeButtons = document.querySelectorAll('.js-modal-close');
 
 
-// openModal.addEventListener("click", () => {
-//   modal.showModal();
-// });
+   /* Перебираем массив кнопок */
+   modalButtons.forEach(function(item){
 
-// closeModal.addEventListener("click", () => {
-//   modal.close();
-// });
+    /* Назначаем каждой кнопке обработчик клика */
+    item.addEventListener('click', function(e) {
+
+       /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+          люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+          Нужно подстраховаться. */
+       e.preventDefault();
+
+       /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+          и будем искать модальное окно с таким же атрибутом. */
+       var modalId = this.getAttribute('data-modal'),
+           modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+
+
+       /* После того как нашли нужное модальное окно, добавим классы
+          подложке и окну чтобы показать их. */
+       modalElem.classList.add('active');
+       overlay.classList.add('active');
+    }); // end click
+
+ }); // end foreach
+
+ closeButtons.forEach(function(item){
+
+    item.addEventListener('click', function(e) {
+       var parentModal = this.closest('.modal');
+
+       parentModal.classList.remove('active');
+       overlay.classList.remove('active');
+    });
+
+ }); // end foreach
+
+});

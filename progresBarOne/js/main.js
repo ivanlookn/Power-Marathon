@@ -3,7 +3,7 @@ const text = document.querySelector(".circl__text");
 let counter = 0;
 
 function goUrl() {
-    document.location.href = "../page17/index.html";
+    // document.location.href = "../page17/index.html";
 };
 
 setInterval(()=>{
@@ -23,4 +23,4 @@ setInterval(()=>{
     }else if(counter == 30) {
         text.textContent = "Расчет вашего метаболического возраста";
     }
-}, 80);
+}, 100);

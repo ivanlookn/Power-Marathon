@@ -103,7 +103,7 @@ html,body{
 }
 
 .circle .right .progress{
-  animation: right 4s linear both;
+  animation: right 4s ease both;
   animation-delay: 0s;
 }
 
@@ -121,7 +121,7 @@ html,body{
   width: 50%;
   height: 10px;
   margin-top: -5px;
-  animation: dot 6s linear both;
+  animation: dot 6s ease both;
   transform-origin: 0% 50%;
 }
 
