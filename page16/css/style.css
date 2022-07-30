@@ -468,6 +468,29 @@ button{
   background-color: #fff; 
 }
 
+.form__buttons:disabled {
+    width: 640px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #7A7A7A8C;
+    background-color:   #7A7A7A8C;
+}
+
+.form__buttons {
+    width: 640px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #FF9A89;
+    background-color: #FF9A89;
+}
+
+
 /* PAGE 17 */
 
 

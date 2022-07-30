@@ -513,12 +513,19 @@ input{
   color: #c2c2c2;
 }
 
+.btn:hover{
+    background-color: #FF9A89;
+    color: #fff;
+    cursor: pointer;
+  }
+
 .btn{
   margin-top: 20px;
   background: #ccc;
   width: 100%;
   padding: 18px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .btn{
@@ -527,11 +534,6 @@ input{
   font-weight: bold;
   color: #fff;
   letter-spacing: 2px;
-}
-
-.btn:hover{
-  background-color: #FF9A89;
-  color: #fff;cursor: pointer;
 }
 
 .page18text{
