@@ -18,7 +18,7 @@
       <div class="container">
         <div class="page16">
           <header class="page16header">
-            <a href="#">
+            <a href="#" id="logo_fv">
               <img src="img/page16header.png" alt="" />
             </a>
           </header>
@@ -30,31 +30,29 @@
             </p>
           </section>
           <div class="page16form">
-            <form class="form" action="">
+            <form class="form" action="../progresBarOne/index.html">
               <h3 class="form__title">Возраст</h3>
               <div class="form__item">
-                <input type="text" name="text" placeholder="Ваш возраст">
+                <input type="number" name="age" placeholder="Ваш возраст">
                 <div class="age">лет</div>
               </div>
               <h3 class="form__title">Рост</h3>
               <div class="form__item">
-                <input type="text" placeholder="Ваш рост">
+                <input type="number" name="growth" placeholder="Ваш рост">
                 <div class="age">см</div>
               </div>
               <h3 class="form__title">Вес</h3>
               <div class="form__item">
-                <input type="text" placeholder="Ваш текущий вес">
+                <input type="number" name="heft" placeholder="Ваш текущий вес">
                 <div class="age">кг</div>
               </div>
               <h3 class="form__title">Целевой вес</h3>
               <div class="form__item">
-                <input type="text" placeholder="Ваш целевой вес" required="text">
+                <input type="number" name="Targetheft" placeholder="Ваш целевой вес">
                 <div class="age">кг</div>
               </div>
-              <button class="form__buttons"> 
-                <a href="#">
+              <button class="form__buttons" type="submit" name="submit" id="page16__button" disabled> 
                   <img src="img/nextbutton.png" alt="next__button">
-                </a>
               </button>
             </form>
           </div>

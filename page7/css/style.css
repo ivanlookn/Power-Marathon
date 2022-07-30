@@ -250,6 +250,10 @@ header {
   cursor: pointer;
 }
 
+.img__item::before {
+    background-color: #FF9A89;
+}
+
 /* Page 7 */
 
 .page7content{
@@ -283,10 +287,35 @@ header {
   gap: 10px;
 }
 
+.checkbox input[type=checkbox]{
+    display:none;
+}
+
+.btn {
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
 .page7img__item img:hover{
-  border-radius: 10px;
-  background-color: #FF9A89;
-  cursor: pointer;
+    border-radius: 10px;
+    background-color: #FF9A89;
+    cursor: pointer;
+  }
+
+.active input[type=checkbox]{
+    display:none;
+}
+
+.inactive input[type=checkbox]{
+    display:none;
+}
+
+.active img{
+    background-color: #FF9A89;
+}
+
+.inactive img{
+    background-color: #fff;
 }
 
 .next__button{

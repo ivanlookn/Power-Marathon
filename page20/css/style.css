@@ -85,6 +85,12 @@ header {
   margin-bottom: 10px;
 }
 
+.timer {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+}
+
 .title {
   color: #000000;
   font-size: 25px;

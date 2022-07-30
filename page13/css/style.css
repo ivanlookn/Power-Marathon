@@ -389,11 +389,36 @@ header {
   justify-content: center;
 }
 
+.button {
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
 .page13content .button img{
   width: 650px;
   height: 90px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.checkbox input[type=checkbox]{
+    display:none;
+}
+
+.active input[type=checkbox]{
+    display:none;
+}
+
+.inactive input[type=checkbox]{
+    display:none;
+}
+
+.active img{
+    background-color: #FF9A89;
+}
+
+.inactive img{
+    background-color: #fff;
 }
 
 /* PAGE 14 */
