@@ -6,13 +6,34 @@ function gobackUrl() {
 function ValidMail() {
     let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
     let myMail = document.getElementById('email').value;
-    let valid = re.test(myMail);
-    return valid;
+    let validEm = re.test(myMail);
+    if(!validEm) {
+        document.getElementById('page18__button').disabled = true;
+        let error = 'Ваш email или телефон введены не правельно';
+        document.getElementById('masseg').textContent = error;
+        setTimeout(
+            function gobackUrl() {
+                document.location.href = "../page18/index.html";
+            }, 1000
+        )
+    }
+    return validEm;
 }
+
  
 function ValidPhone() {
     let re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
     let myPhone = document.getElementById('phone').value;
-    let valid = re.test(myPhone);
-    return valid;
-}  
+    let validPh = re.test(myPhone);
+    if(!validPh) {
+        document.getElementById('page18__button').disabled = true;
+        let error = 'Ваш email или телефон введены не правельно';
+        document.getElementById('masseg').textContent = error;
+        setTimeout(
+            function gobackUrl() {
+                document.location.href = "../page18/index.html";
+            }, 1000
+        )
+    }
+    return validPh;
+}

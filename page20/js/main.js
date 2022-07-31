@@ -12,6 +12,6 @@ function updateCoutdown() {
 
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    constdownEl.innerHTML = `${minutes}:${seconds}`;
+    constdownEl.innerHTML = `${minutes} : ${seconds}`;
     time--;
 };

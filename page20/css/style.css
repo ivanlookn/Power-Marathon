@@ -805,6 +805,11 @@ input {
 
 .timer__box{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.timer_text{
+    font-size: 15px;
 }
 
 .page20__title, .page20__text{

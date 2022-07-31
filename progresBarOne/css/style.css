@@ -1,24 +1,107 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  ul[class] {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* reset css */
+  
+  /* font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif; */
+  
+  
+  body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+  }
+
+.wrapper{
+    position: relative;
+    max-width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
 }
 
-html,body{
-  display: grid;
-  height: 100%;
-  text-align: center;
-  place-items: center;
-  background: #fff;
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  
+  header {
+    top: 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+
+.container_circular{
+    width: 100%;
+    height: 45vh;
 }
 
 .circular{
   height: 100px;
   width: 100px;
   position: relative;
-  transform: scale(3);
+  top: 25%;
+  left: 40%;
+  transform: scale(2);
 }
 
 .circular .inner, .circular .outer, .circular .circle{
@@ -27,7 +110,7 @@ html,body{
   height: 100%;
   width: 100%;
   border-radius: 100%;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
+  /* box-shadow: inset 0 1px 0 rgba(0,0,0,0.2); */
 }
 
 .circular .inner{
@@ -42,9 +125,11 @@ html,body{
 }
 
 .circl__text {
+    margin-top: 155px;
+    text-align: center;
     color: #000;
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 400;
     line-height: 1.3em;
 }
 
@@ -60,7 +145,7 @@ html,body{
   transform: translate(-50%, -50%);
   z-index: 10;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 600;
   color: #000;
 }
 
@@ -68,7 +153,7 @@ html,body{
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: #ffc0eb;
   -webkit-border-radius: 100%;
   clip: rect(0px, 100px, 100px, 50px);
 }
@@ -102,7 +187,7 @@ html,body{
 }
 
 .circle .right .progress{
-  animation: right .5s ease both;
+  animation: right .3s ease both;
   animation-delay: 4s;
 }
 
@@ -120,7 +205,7 @@ html,body{
   width: 50%;
   height: 10px;
   margin-top: -5px;
-  animation: dot 6s linear both;
+  animation: dot 6s ease-in both;
   transform-origin: 0% 50%;
 }
 
@@ -145,3 +230,27 @@ html,body{
     z-index: 4;
   }
 }
+
+.progresfooter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
