@@ -15,30 +15,66 @@
   </head>
   <body>
 
-
-    <button class="js-open-modal" data-modal="1">
-        <img class="menu" src="./img/menu.png" alt="menu">
-    </button>
-
     <div class="modal" data-modal="1">
         <button class="modal__cross js-modal-close"><img src="./img/close.png" alt="close"></button>
         <ul  class="modal__title">
-            <li>Часто Задаваемые Вопросы</li>
-            <li>Реквизиты</li>
-            <li><a>Публичная оферта</a></li>
-            <li><a>Политика конфиденциальности</a></li>
-            <li><a>Политика подписки</a></li>
-            <li><a>Политика возврата денежных средств</a></li>
-            <li><a>Отменить подписку</a></li>
+            <div class="acard">
+                <input type="checkbox" id="faq-1">
+                <h1 class="acar__heder"><label class="lab__text" for="faq-1">Часто Задаваемые Вопросы</label></h1>
+                <div class="acar__text">
+                    <div class="acard">
+                        <input type="checkbox" id="faq1">
+                        <h1 class="acar__heder"><label class="lab__text" for="faq1">Как происходит процесс подписки на Power Marathon ?</label></h1>
+                        <div class="acar__text">
+                            Вы проходите небольшой опрос и отвечаете на вопросы о Ваших привычках, предпочтениях и образе жизни. На основе полученных ответов система генерирует для Вас персонифицированный план питания и физических тренировок. По завершении прохождения опроса Вы сможете оплатить свое участие в удобном и эффективном онлайн-марафоне похудения, основанном на Вашем персонифицированном плате питания и тренировок. Оплата происходит в формате рекуррентных платежей, а важная информация и полезные советы будут предоставляется Вам ежедневно нашими заботливыми Кураторами.
+                        </div>
+                    </div>
+                    <div class="acard">
+                        <input type="checkbox" id="faq2">
+                        <h1 class="acar__heder"><label class="lab__text" for="faq2">Как будет происходить мое участие в Онлайн-Марафоне?</label></h1>
+                        <div class="acar__text">
+                            В процессе регистрации и оплаты система попросит Вас ввести Ваши контактные данные: а именно, Ваш e-mail и/или telegram. После оплаты участия вся важная информация и полезные советы будут предоставляется Вам через предоставленные Вами средства связи в виде текстовых, графических, фото- и видео-материалов.
+                        </div>
+                    </div>
+                    <div class="acard">
+                        <input type="checkbox" id="faq3">
+                        <h1 class="acar__heder"><label class="lab__text" for="faq3">Могу ли я рассчитывать на возврат денежных средств?</label></h1>
+                        <div class="acar__text">
+                            Вы вправе потребовать возврата уплаченных денежных средств, если не смотря на правильное выполнение всех заданий наших Кураторов, участие в Марафоне не принесло Вам ожидаемых результатов .
+
+                            Запрос на возврат ранее уплаченных денежных средств вы можете направить нам через раздел «Поддержка», реализованный на сайте. Возврат осуществляется в соответствии с «Политикой возврата денежных средств», размещенной на сайте.
+
+                            Мы относимся к нашим Клиентам с большим трепетом и заботой, поэтому в случае недовольства, мы всегда стремимся встать на сторону Клиента и осуществить возврат в его пользу.
+                        </div>
+                    </div>
+                    <div class="acard">
+                        <input type="checkbox" id="faq4">
+                        <h1 class="acar__heder"><label class="lab__text" for="faq4">Как происходит оплата Марафона?</label></h1>
+                        <div class="acar__text">
+                            Оплата осуществляется банковской картой, либо Apple Pay, либо Google Pay на сайте через функционал рекуррентных платежей согласно договору публичной оферты, размещенному на сайте.
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="acard">
+                <input type="checkbox" id="faq-2">
+                <h1 class="acar__heder"><label for="faq-2">With Pure Css ?</label></h1>
+                <div class="acar__text">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et nostrum voluptate eveniet nisi tempore ut accusantium, quam, amet possimus repellendus, ab modi vitae aspernatur asperiores fuga natus veritatis culpa nihil?Lorem ipsum, dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat ea nulla exercitationem, expedita blanditiis beatae harum molestias, ullam eos sint facere molestiae vero repudiandae inventore excepturi dignissimos eligendi quidem quasi maiores voluptatem modi. Quo modi alias voluptatibus architecto deleniti asperiores doloribus ratione ipsa aliquid fugit. Quam pariatur voluptas omnis aliquid asperiores nam? Quidem harum ipsam earum facere doloribus velit accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere, commodi nisi vitae aliquid error! Soluta atque rerum, doloribus officiis commodi quia dignissimos debitis beatae quibusdam placeat laboriosam esse omnis praesentium, corporis sint nemo error tempora delectus reiciendis amet odit, alias hic. Voluptates, repudiandae? Velit.</p>
+                </div>
+              </div>
+            </div>
         </ul>
     </div>
     <div class="overlay js-overlay-modal"></div>
 
-
     <div class="container">
       <header class="header">
+        <button class="js-open-modal" data-modal="1">
+            <img class="menu" src="./img/menu.png" alt="menu">
+        </button>
         <div class="header__logo">
-          <a href="#" class="logo">
+          <a class="logo">
             <img src="img/logo.png" alt="" />
           </a>
         </div>

@@ -26,14 +26,25 @@ let closeButtons = document.querySelectorAll('.js-modal-close');
 
        /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
           и будем искать модальное окно с таким же атрибутом. */
-       var modalId = this.getAttribute('data-modal'),
-           modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+    let modalId = this.getAttribute('data-modal');
+    let modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
 
 
        /* После того как нашли нужное модальное окно, добавим классы
           подложке и окну чтобы показать их. */
        modalElem.classList.add('active');
        overlay.classList.add('active');
+
+       let boxElement = document.querySelector('.active');
+       let animation = boxElement.animate([
+         {opacity: '0'},
+         {transform: 'translate(0px)'},
+        {transform: 'translate(0px, 200px)'}
+       ], 800);
+       animation.addEventListener('finish', function() {
+         boxElement.style.transform = 'translate(0px, 200px)';
+       });
+
     }); // end click
 
  }); // end foreach
@@ -41,10 +52,21 @@ let closeButtons = document.querySelectorAll('.js-modal-close');
  closeButtons.forEach(function(item){
 
     item.addEventListener('click', function(e) {
-       var parentModal = this.closest('.modal');
+       let parentModal = this.closest('.modal');
 
-       parentModal.classList.remove('active');
-       overlay.classList.remove('active');
+       let boxElement = document.querySelector('.active');
+       let animation = boxElement.animate([
+         {transform: 'translate(200)'},
+         {opacity: '0'},
+         {transform: 'translate(0px, 500px)'},
+         {opacity: '0'},
+       ], 500);
+       animation.addEventListener('finish', function() {
+        boxElement.style.transform = 'translate(0px, 0px)';
+         parentModal.classList.remove('active');
+         overlay.classList.remove('active')
+       });
+
     });
 
  }); // end foreach

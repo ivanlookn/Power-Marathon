@@ -31,7 +31,14 @@
             
             <form action="../page19/index.html" class="page18form" method="post" onsubmit="return (ValidMail()&&ValidPhone())">
               <div class="input__item">
-                <input type="text" class="js-input" name="name" placeholder="Введите свое имя" />
+                <input
+                  type="text"
+                  class="js-input"
+                  name="name"
+                  placeholder="Введите свое имя"
+                  required
+                  onkeyup=""
+                />
               </div>
               <div class="input__item">
                 <input 
@@ -40,6 +47,8 @@
                   type="text"
                   name="email"
                   placeholder="Введите свой email"
+                  onkeyup=""
+                  required
                 />
               </div>
               <div class="input__item">
@@ -49,6 +58,8 @@
                   type="tel"
                   name="tel"
                   placeholder="Введите свой телефон"
+                  onkeyup=""
+                  required
                 />
               </div>
 
