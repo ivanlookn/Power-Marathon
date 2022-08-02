@@ -99,9 +99,9 @@ html {
   height: 100px;
   width: 100px;
   position: relative;
-  top: 25%;
+  top: 50%;
   left: 40%;
-  transform: scale(2);
+  transform: scale(2.5);
 }
 
 .circular .inner, .circular .outer, .circular .circle{
@@ -125,12 +125,19 @@ html {
 }
 
 .circl__text {
-    margin-top: 155px;
+    margin-top: 240px;
     text-align: center;
     color: #000;
     font-size: 25px;
     font-weight: 400;
     line-height: 1.3em;
+}
+
+@media screen and (max-width: 1200px)  {
+    .circl__text {
+        left: 35%;
+        margin-top: 280px;
+    }
 }
 
 .circular .circle{

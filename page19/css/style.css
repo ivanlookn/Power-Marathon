@@ -562,6 +562,11 @@ input {
   padding: 20px 0;
 }
 
+.women {
+    width: 100px;
+    height: 100px;
+}
+
 .page19header .title{
   color: #000000;
   font-size: 25px;

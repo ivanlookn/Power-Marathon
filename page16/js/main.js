@@ -34,15 +34,24 @@ inputs.forEach((input) => {
   })
 })
 
-const inputi = document.querySelectorAll('input[type=number]');
+const inputi = document.querySelectorAll('.num__age[type=number]')
 
-Array.from(inputi).forEach(input => {
-    const min = +input.min;
-    const max = +input.max;
+function replaceAge() {
+  const re = /(?<=\d{2})(\d+)/g
+  if (re.test(this.value)) {
+    this.value = this.value.replace(re, '')
+  }
+}
 
-    input.addEventListener('input', (e) => {
-        const value = +input.value;
-        if (value > max) { input.value = max}
-        else if (value < min) { input.value = min }
-    })
-});
+Array.from(inputi).forEach((i) => i.addEventListener('input', replaceAge));
+
+const inputis = document.querySelectorAll('.num__form[type=number]')
+
+function replaceFor() {
+  const re = /(?<=\d{3})(\d+)/g
+  if (re.test(this.value)) {
+    this.value = this.value.replace(re, '')
+  }
+}
+
+Array.from(inputis).forEach((i) => i.addEventListener('input', replaceFor));

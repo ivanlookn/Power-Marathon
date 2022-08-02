@@ -507,7 +507,7 @@ input{
   padding-bottom: 10px;
 }
 
-.page18form ::placeholder {
+.page18form::placeholder {
   font-size: 20px;
   font-weight: 500;
   color: #c2c2c2;
@@ -515,7 +515,7 @@ input{
 
 .btn{
   margin-top: 20px;
-  background: #FF9A89;
+  background: #ccc;
   width: 100%;
   padding: 18px;
   border-radius: 50px;
@@ -527,22 +527,10 @@ input{
   cursor: pointer;
 }
 
-.btn:disabled{
-    background-color: #ccc;
-    color: #fff;
-    cursor: pointer;
-}
-
 .massege {
     color: red;
     font-size: 18px;
     font-weight: 400;
-}
-
-.btn__disable {
-    background-color: #ccc;
-    color: #fff;
-    cursor: pointer;
 }
 
 .page18text{

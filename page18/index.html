@@ -28,7 +28,7 @@
               Марафон похудения <br />
               Girl Power!
             </h2>
-            
+            <!-- ../page19/index.html -->
             <form action="../page19/index.html" class="page18form" method="post" onsubmit="return (ValidMail()&&ValidPhone())">
               <div class="input__item">
                 <input
@@ -37,17 +37,15 @@
                   name="name"
                   placeholder="Введите свое имя"
                   required
-                  onkeyup=""
                 />
               </div>
               <div class="input__item">
                 <input 
                   class="js-input-email"
                   id="email"
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="Введите свой email"
-                  onkeyup=""
                   required
                 />
               </div>
@@ -55,15 +53,14 @@
                 <input
                   class="js-input-phone"
                   id="phone"
-                  type="tel"
+                  type="text"
                   name="tel"
                   placeholder="Введите свой телефон"
-                  onkeyup=""
                   required
                 />
               </div>
 
-              <p id="masseg" class="massege"></p>
+              <p id="message" class="message"></p>
 
               <p class="page18text">
                 Мы уважаем Вашу частную жизнь и обязуемся <br />
@@ -73,7 +70,7 @@
                 также для отправки Вам полезных предложений <br />
                 и подарков.
               </p>
-              <button class="btn" id="page18__button" type="submit" name="submit" onClick="ValidMail(); ValidPhone()">Продолжить</button>
+              <button class="btn" id="page18__button" type="submit" name="submit" onClick="ValidMail(); ValidPhone();">Продолжить</button>
             </form>
           </section
           >

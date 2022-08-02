@@ -1,8 +1,11 @@
-const startingMinutes = 20;
+const startingMinutes = 1;
 
 let time = startingMinutes * 60;
 
-const constdownEl = document.getElementById('timer__min');
+const constdownM = document.getElementById('timer__min');
+const constdownS = document.getElementById('timer__sec');
+
+const constdownCount = document.getElementById('timer__two__count');
 
 setInterval(updateCoutdown, 1000);
 
@@ -12,6 +15,14 @@ function updateCoutdown() {
 
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    constdownEl.innerHTML = `${minutes} : ${seconds}`;
-    time--;
+    if (time != '0') {
+        time--;
+    };
+
+    constdownM.innerHTML = `${minutes}`;
+    constdownS.innerHTML = `${seconds}`;
+
+    constdownCount.innerHTML = `${minutes} : ${seconds}`;
+
+
 };
