@@ -18,7 +18,7 @@
       <div class="container">
         <div class="page7">
           <header class="page7header">
-            <a href="#">
+            <a href="#" id="logo_six">
               <img src="img/page7header.png" alt="" />
             </a>
           </header>
@@ -29,22 +29,86 @@
             </p>
             <div class="page7img__list">
               <div class="page7img__item">
-                <img src="img/page7img1.png" alt="">
-                <img src="img/page7img2.png" alt="">
-                <img src="img/page7img3.png" alt="">
-                <img src="img/page7img4.png" alt="">
-                <img src="img/page7img5.png" alt="">
-                <img src="img/page7img6.png" alt="">
+                <div class="checkbox">
+                    <input id="checkbox"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox">
+                    <label for="checkbox">
+                      <img src='img/page7img1.png'/>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox2"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox2">
+                    <label for="checkbox2">
+                      <img class="box" src='img/page7img2.png'/>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox3"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox3">
+                    <label for="checkbox3">
+                      <img class="box" src='img/page7img3.png'/>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox4"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox4">
+                    <label for="checkbox4">
+                      <img class="box" src='img/page7img4.png'/>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox5"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox5">
+                    <label for="checkbox5">
+                      <img class="box" src='img/page7img5.png'/>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <input id="checkbox6"
+                    onchange="this.parentNode.className = this.checked ? 'active' : 'inactive'"
+                    onclick="check()"
+                    type="checkbox"
+                    class="chek"
+                    name="checkbox"
+                    value="checkbox6">
+                    <label for="checkbox6">
+                      <img src='img/page7img6.png'/>
+                    </label>
+                </div>
               </div>
             </div>
             <div class="next__button">
-              <a href="#">
-                <img src="img/nextbutton.png" alt="nextbutton">
-              </a>
+                <button id="page7_button" class="btn" disabled>Продолжить</button>
             </div>
           </section>
           <footer class="page7footer">
-            <img src="img/page7footer.png" alt="">
+            <img src="img/page7footer.png"/>
           </footer>
         </div>
       </div>

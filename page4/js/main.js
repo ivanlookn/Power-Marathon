@@ -1,6 +1,14 @@
-$(function () {
-  $('.slider').slick({
-    arrows: false,
-    dots: true,
-  });
-});
+document.getElementById("logo_tree").addEventListener('click', gobackUrl, false);
+function gobackUrl() {
+    document.location.href = "../page3/index.html";
+};
+
+let img = document.getElementsByClassName("page4item");
+
+for (let i = 0; i < img.length; i++) {
+    let button = img[i];
+    button.addEventListener('click', goUrl);
+};
+function goUrl() {
+    document.location.href = "../page5/index.html";
+};

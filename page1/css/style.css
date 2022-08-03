@@ -60,6 +60,7 @@ font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif; */
 
 
+
 body{
   min-height: 100vh;
   font-family: sans-serif;
@@ -116,6 +117,7 @@ header {
 .header__logo{
   width: 100px;
   height: 100px;
+  margin-right: 160px;
 }
 
 .header__text{
@@ -185,7 +187,151 @@ header {
   padding-right: 16px;
 }
 
+/* Modul windiw */
+
+.menu{
+  cursor: pointer;
+}
+
+.modal__btn, button{
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all ease;
+}
+
+/* Стили для модальных окон */
+ 
+.modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+    max-height: 500px;
+    overflow: auto;
+    
+    /*  Установаем ширину окна  */
+    width: 850px;
+    max-width: 850px;
+    
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: -60px;
+    left: 245px;
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: .5s all;
+}
+
+ /* Стили для активных классов подложки и окна */
+ 
+ .modal.active,
+ .overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+ /* Стили для кнопки закрытия */
+ 
+ .modal__cross {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    fill: #444;
+    overflow: auto;
+    cursor: pointer;
+ }
+
 /* --------------------------------------- */
+
+/* Acardion */
+
+div.acard{
+  position: relative;
+  margin: 10px;
+}
+
+input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+}
+
+.acar__heder{
+  background: #fff;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+}
+
+label::before{
+  content: "";
+  display: inline-block;
+  border: 5px solid transparent;
+  border-left: 5px solid #000;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lab__text {
+    margin: 10px 0px;
+}
+
+div.acar__text{
+  max-height: 0px;
+  overflow: hidden;
+  margin-left: 25px;
+  transition: max-height 1.5s;
+  background-color: white;
+  /* box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+div.acar__text p {
+  padding: 2em;
+}
+
+input:checked ~ h1 label::before{
+  content: "";
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+input:checked ~ h1 ~ div.acar__text{
+  max-height: 500px;
+}
+
+/* -------------------------------------------- */
 
 /* Page 2 */
 

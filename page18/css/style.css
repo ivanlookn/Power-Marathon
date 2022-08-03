@@ -507,7 +507,7 @@ input{
   padding-bottom: 10px;
 }
 
-.page18form ::placeholder {
+.page18form::placeholder {
   font-size: 20px;
   font-weight: 500;
   color: #c2c2c2;
@@ -519,19 +519,18 @@ input{
   width: 100%;
   padding: 18px;
   border-radius: 50px;
-}
-
-.btn{
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
-.btn:hover{
-  background-color: #FF9A89;
-  color: #fff;cursor: pointer;
+.massege {
+    color: red;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .page18text{

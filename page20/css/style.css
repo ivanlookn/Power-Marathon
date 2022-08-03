@@ -85,6 +85,12 @@ header {
   margin-bottom: 10px;
 }
 
+.timer {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+}
+
 .title {
   color: #000000;
   font-size: 25px;
@@ -781,20 +787,87 @@ input {
   margin-right: 10px;
 }
 
+
 /* Page 20 */
+
 
 .page20{
   background-color: #FDE5E1;
-  padding: 10px 0;
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 200px;
+}
+
+.page20__scrol{
+    background-color: #FDE5E1;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 7;
+  
 }
 
 .page20__header{
+  max-width: 580px;
   display: flex;
   justify-content: space-between;
 }
 
 .timer__box{
+  width: 55px;
+  height: 55px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 34px;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.timer_text{
+    line-height: 1;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.page20_header__scrol {
+    display: flex;
+}
+
+.header__scrol {
+    color: #000;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.timer__scrol {
+    margin-top: 10px
+}
+
+.btn__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+    width: 150px;
+    background: #ff999c;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img__scrol {
+    margin-top: 2px;
+    margin-left: 7px;
 }
 
 .page20__title, .page20__text{
@@ -1035,5 +1108,6 @@ input {
   position: absolute;
   right: 65px;
   bottom: -104px;
+  z-index: 1;
 }
 

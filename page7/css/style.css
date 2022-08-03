@@ -250,6 +250,10 @@ header {
   cursor: pointer;
 }
 
+.img__item::before {
+    background-color: #FF9A89;
+}
+
 /* Page 7 */
 
 .page7content{
@@ -283,10 +287,57 @@ header {
   gap: 10px;
 }
 
+.checkbox input[type=checkbox]{
+    display:none;
+}
+
+.btn {
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
 .page7img__item img:hover{
-  border-radius: 10px;
-  background-color: #FF9A89;
-  cursor: pointer;
+    border-radius: 10px;
+    background-color: #FF9A89;
+    cursor: pointer;
+  }
+
+.active input[type=checkbox]{
+    display:none;
+}
+
+.inactive input[type=checkbox]{
+    display:none;
+}
+
+.active img{
+    background-color: #FF9A89;
+}
+
+.inactive img{
+    background-color: #fff;
+}
+
+.btn:disabled {
+    width: 670px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #7A7A7A8C;
+    background-color:   #7A7A7A8C;
+}
+
+.btn {
+    width: 670px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #FF9A89;
+    background-color: #FF9A89;
 }
 
 .next__button{

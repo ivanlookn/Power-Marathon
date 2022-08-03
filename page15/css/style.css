@@ -413,3 +413,50 @@ header {
 .page15content .text{
   padding-bottom: 20px;
 }
+
+.button {
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+
+.checkbox input[type=checkbox]{
+    display:none;
+}
+
+.active input[type=checkbox]{
+    display:none;
+}
+
+.inactive input[type=checkbox]{
+    display:none;
+}
+
+.active img{
+    background-color: #FF9A89;
+}
+
+.inactive img{
+    background-color: #fff;
+}
+
+.btn:disabled {
+    width: 670px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+}
+
+.btn {
+    width: 670px;
+    height: 100px;
+    border-radius: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #FF9A89;
+    background-color: #FF9A89;
+}

@@ -18,7 +18,7 @@
       <div class="container">
         <div class="page18">
           <header class="page18header">
-            <a href="#">
+            <a href="#" id="logo__one">
               <img src="img/page18header.png" alt="" />
             </a>
           </header>
@@ -28,36 +28,52 @@
               Марафон похудения <br />
               Girl Power!
             </h2>
-            <form action="" class="page18form">
-              <div class="input__item">
-                <input type="text" name="name" placeholder="Введите свое имя" />
-              </div>
+            <!-- ../page19/index.html -->
+            <form action="../page19/index.html" class="page18form" method="post" onsubmit="return (ValidMail()&&ValidPhone())">
               <div class="input__item">
                 <input
+                  type="text"
+                  class="js-input"
+                  name="name"
+                  placeholder="Введите свое имя"
+                  required
+                />
+              </div>
+              <div class="input__item">
+                <input 
+                  class="js-input-email"
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="Введите свой email"
+                  required
                 />
               </div>
               <div class="input__item">
                 <input
-                  type="tel"
+                  class="js-input-phone"
+                  id="phone"
+                  type="text"
                   name="tel"
                   placeholder="Введите свой телефон"
+                  required
                 />
               </div>
+
+              <p id="message" class="message"></p>
 
               <p class="page18text">
                 Мы уважаем Вашу частную жизнь и обязуемся <br />
                 защищать Ваши персональные данные.<br />
                 Вы будем использовать Ваши контактные данные <br />
-                только для коммуникации в рамках Марафона, а <br />
+                только для коммуникации в рамках Марафона, а <br /> 
                 также для отправки Вам полезных предложений <br />
                 и подарков.
               </p>
-              <button class="btn">Продолжить</button>
+              <button class="btn" id="page18__button" type="submit" name="submit" onClick="ValidMail(); ValidPhone();">Продолжить</button>
             </form>
-          </section>
+          </section
+          >
 
           <div class="page18footer"></div>
         </div>

@@ -14,6 +14,19 @@
     <title></title>
   </head>
   <body>
+    <div class="page20__scrol">
+        <div class="container">
+            <header class="page20_header__scrol">
+                <h2 class="header__scrol">
+                  Ваша скидка исчезнет через:
+                  <div class="timer__scrol">
+                      <div class="timer" id="timer__two__count"></div>
+                  </div>
+                </h2>
+                <button class="btn__text" id="page20__button">Получить<img class="img__scrol" src="./img/arrowLit.png" /></button>
+              </header>
+        </div>
+    </div>
     <div class="page20">
       <div class="container">
         <header class="page20__header">
@@ -21,8 +34,12 @@
             Срок действия Вашего персонального предложения истекает через:
           </h2>
           <div class="timer__box">
-            <div id="timer__min">Min</div>
-            <div id="timer__sec">Sec</div>
+            <div class="timer" id="timer__min"></div>
+            <label class="timer_text" >Минут</label>
+          </div>
+          <div class="timer__box">
+            <div class="timer" id="timer__sec"></div>
+            <label class="timer_text">Секунд</label>
           </div>
         </header>
       </div>

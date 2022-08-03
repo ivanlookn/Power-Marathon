@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  ul[class] {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* reset css */
+  
+  /* font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif; */
+  
+  
+  body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #373A39;
+  }
+
+.wrapper{
+    position: relative;
+    max-width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  
+  header {
+    top: 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+
+.container_circular{
+    width: 100%;
+    height: 45vh;
+}
+
+.circular{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  transform: scale(2.5);
+}
+
+.circular .inner, .circular .outer, .circular .circle{
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  /* box-shadow: inset 0 1px 0 rgba(0,0,0,0.2); */
+}
+
+.circular .inner{
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background-color: #fff;
+  border-radius: 100%;
+  /* box-shadow: 0 1px 0 rgba(0,0,0,0.2); */
+}
+
+.circl__text {
+    margin-top: 240px;
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+@media screen and (max-width: 1200px)  {
+    .circl__text {
+        left: 35%;
+        margin-top: 280px;
+    }
+}
+
+.circular .circle{
+  z-index: 1;
+  box-shadow: none;
+}
+
+.circular .numb{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ffc0eb;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+
+.circle .bar .progress, .dot span{
+  background: #FF9A89;
+}
+
+.circle .left .progress{
+  z-index: 1;
+  animation: left 4s ease both;
+}
+
+@keyframes left {
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+.circle .right{
+  z-index: 3;
+  transform: rotate(180deg);
+}
+
+.circle .right .progress{
+  animation: right .3s ease both;
+  animation-delay: 4s;
+}
+
+@keyframes right {
+  100%{
+    transform: rotate(15deg);
+  }
+}
+
+.circle .dot{
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 10px;
+  margin-top: -5px;
+  animation: dot 6s ease-in both;
+  transform-origin: 0% 50%;
+}
+
+.circle .dot span {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+@keyframes dot{
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+    z-index: 4;
+  }
+  100% {
+    transform: rotate(270deg);
+    z-index: 4;
+  }
+}
+
+.progresfooter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
