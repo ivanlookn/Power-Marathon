@@ -23,6 +23,4 @@ function updateCoutdown() {
     constdownS.innerHTML = `${seconds}`;
 
     constdownCount.innerHTML = `${minutes} : ${seconds}`;
-
-
 };

@@ -4,3 +4,5 @@ document.getElementById("get__footer").addEventListener('click', goUrl, false);
 function goUrl() {
     document.location.href = "../page20/index.html";
 };
+
+console.log(val)

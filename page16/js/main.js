@@ -55,3 +55,8 @@ function replaceFor() {
 }
 
 Array.from(inputis).forEach((i) => i.addEventListener('input', replaceFor));
+
+
+let text = document.getElementsByClassName("target__weight")[0];
+export const val = text.value;
+console.log(val)

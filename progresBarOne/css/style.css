@@ -101,7 +101,7 @@ html {
   position: relative;
   top: 50%;
   left: 40%;
-  transform: scale(2.5);
+  transform: scale(3);
 }
 
 .circular .inner, .circular .outer, .circular .circle{
@@ -125,17 +125,22 @@ html {
 }
 
 .circl__text {
-    margin-top: 240px;
+    margin-top: 300px;
     text-align: center;
-    color: #000;
-    font-size: 25px;
-    font-weight: 400;
+    color: #333;
+    font-size: 35px;
+    font-weight: 600;
     line-height: 1.3em;
 }
 
 @media screen and (max-width: 1200px)  {
-    .circl__text {
+    .circular {
+        transform: scale(2.5);
         left: 35%;
+    }
+    .circl__text {
+        font-size: 25px;
+        left: 25%;
         margin-top: 280px;
     }
 }
@@ -160,7 +165,7 @@ html {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: #ffc0eb;
+  background: #eee;
   -webkit-border-radius: 100%;
   clip: rect(0px, 100px, 100px, 50px);
 }

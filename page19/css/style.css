@@ -562,9 +562,25 @@ input {
   padding: 20px 0;
 }
 
+.page19widget{
+    position: relative;
+}
+
 .women {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.one__text {
+    /* position: absolute; */
+    top: 100;
+    left: 80;
+}
+
+.two__text {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
 }
 
 .page19header .title{

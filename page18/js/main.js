@@ -22,7 +22,7 @@ function gobackUrl() {
 
 
   function ValidMail() {
-    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i
     let myMail = document.getElementById('email').value;
     let valid = re.test(myMail);
     if (valid){
@@ -38,8 +38,26 @@ function gobackUrl() {
     return valid;
     }
 
+    // +79261234567
+    // 89261234567
+    // 79261234567
+    // +7 926 123 45 67
+    // 8(926)123-45-67
+    // 123-45-67
+    // 9261234567
+    // 79261234567
+    // (495)1234567
+    // (495) 123 45 67
+    // 89261234567
+    // 8-926-123-45-67
+    // 8 927 1234 234
+    // 8 927 12 12 888
+    // 8 927 12 555 12
+    // 8 927 123 8 123
+
+
     function ValidPhone() {
-    let re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    let re = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/
     let myPhone = document.getElementById('phone').value;
     let valid = re.test(myPhone);
     if (valid){
