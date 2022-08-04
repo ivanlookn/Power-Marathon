@@ -154,6 +154,12 @@ header {
   margin-bottom: 5px;
 }
 
+.info__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info .info__links{
   margin-bottom: 10px;
 }
@@ -294,6 +300,8 @@ header {
 .hedar__text__madal{
     padding: 50px 0px;
     margin: 0 auto;
+    font-size: 25px;
+    color: #FF7E82;
 }
 
 .img__modal {
@@ -325,6 +333,10 @@ header {
 
 .modal__polit{
     margin-top: 10px;
+}
+
+.link-polit{
+    color: #7A7A7A;
 }
 
 ol{
@@ -366,6 +378,20 @@ ol{
 /* Modul windiw two */
  
  /* Стили для модальных окон */
+ .overlay-link{
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF7D815E;
+    z-index: 32;
+ /*    transition: .3s all; */
+ }
  
  .modal-link {
     
@@ -399,7 +425,8 @@ ol{
  
  /* Стили для активных классов подложки и окна */
  
- .modal-link.activ{
+ .modal-link.activ,
+ .overlay-link.activ{
     max-height: 100vh;
     opacity: 1;
     visibility: visible;
@@ -448,13 +475,14 @@ ol{
     /*  Установаем ширину окна  */
     width: 850px;
     max-width: 1000px;
+
     
     /*  Центрируем и задаем z-index */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 30; /* Должен быть выше чем у подложки*/
+    z-index: 40; /* Должен быть выше чем у подложки*/
     
     /*  Побочные стили   */
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
@@ -464,6 +492,21 @@ ol{
     border-radius: 3px;
     background-color: #fff;
     transition: 0.3s all;
+ }
+
+ .link__modal{
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ .link__text{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(251,140,120);
+    border-radius: 10px;
+    color: #fff;
  }
  
  
@@ -487,8 +530,132 @@ ol{
     fill: #444;
     cursor: pointer;
  }
+
+/* .crass__delet{
+    left: 1220px;
+} */
+
+.btn__delet{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: #FF7E82;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 800;
+}
  
+.form__delet {
+    margin-top: 40px;
+    display: grid;
+}
+
+.input__delet{
+    display: flex;
+}
+
+.input__delet input{
+    width: 380px;
+    height: 28px;
+    margin: 0px 10px;
+    padding: 20px 16px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #FF7E82;
+    border-radius: 50px;
+}
+
+.input__delet input::placeholder {
+    color: #FF7E82;
+    font-weight: 700;
+    opacity: .5;
+}
+
 /* --------------------------------------- */
+
+.modal-link-width{
+    width: 550px;
+    height: 500px;
+    padding: 0px 35px;
+}
+
+.modal__conf{
+    left: 500px;
+}
+
+.content__conf {
+    height: 300px;
+    text-align: center;
+}
+
+.color__caunt{
+    color:  rgb(251,140,120);
+}
+
+.content__polit{
+    padding: 1em;
+    background: #ebe9eb;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.text__polit{
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 435px;
+}
+
+.header__conf{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 40px 0px;
+}
+
+.conf__caunt{
+    display: flex;
+    margin-top: 65px;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.link__conf{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.conf__linctext{
+    background-color: #c36;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    padding: 2px 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.conf__linctext:hover {
+    background-color: #a46497;
+}
+
+.text__haeder {
+    text-align: center;
+    color: #7A7A7A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 50px 0px;
+}
+
+.crass__delet {
+    left: 1450px;
+}
 
 /* Acardion */
 
@@ -502,7 +669,7 @@ div.acard{
   font-weight: 400;
 }
 
-input{
+.input__acard{
   position: absolute;
   left: 0;
   top: 0;

@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
    /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
 let modalButtons = document.querySelectorAll('.open-modal-link');
+let overlay      = document.querySelector('.overlay-link');
 let closeButtons = document.querySelectorAll('.modal-close-link');
 
 
@@ -130,6 +131,7 @@ let closeButtons = document.querySelectorAll('.modal-close-link');
          /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
          modalElem.classList.add('activ');
+         overlay.classList.add('activ');
       }); // end click
 
    }); // end foreach
@@ -141,6 +143,7 @@ let closeButtons = document.querySelectorAll('.modal-close-link');
          let parentModal = this.closest('.modal-link');
 
          parentModal.classList.remove('activ');
+         overlay.classList.remove('activ');
       });
 
    }); // end foreach
@@ -152,10 +155,14 @@ let closeButtons = document.querySelectorAll('.modal-close-link');
         if (key == 27) {
 
             document.querySelector('.modal-link.activ').classList.remove('activ');
+            document.querySelector('.overlay-link').classList.remove('activ');
         };
     }, false);
 
 }); // end ready
+
+
+
 
  document.addEventListener('DOMContentLoaded', function() {
 
